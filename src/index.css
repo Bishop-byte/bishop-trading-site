@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Centered sections on every page */
+.section-container {
+  @apply w-full max-w-5xl px-4 py-8 flex flex-col items-center justify-center text-center;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
+  max-width: 700px;
+}
+
+table {
+  @apply w-full mt-6 border-collapse text-sm;
+}
+
+th, td {
+  @apply border px-4 py-2 text-center;
+}
+
+th {
+  @apply bg-gray-800 text-white;
+}
+
+td {
+  @apply bg-gray-900 text-gray-300;
+}
+
+a {
+  color: #64b5f6;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #2196f3;
+}
+
+/* Responsive grid layout for dashboard if needed */
+.dashboard-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6 w-full;
+}
